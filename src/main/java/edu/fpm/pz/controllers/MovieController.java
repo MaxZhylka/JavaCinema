@@ -4,11 +4,13 @@ import edu.fpm.pz.dtos.CreateUpdateMovieDto;
 import edu.fpm.pz.dtos.MovieDto;
 import edu.fpm.pz.services.interfaces.IMovieService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
+@Controller
+@ResponseBody
 @RequestMapping("/movies")
 public class MovieController {
 

@@ -5,11 +5,13 @@ import edu.fpm.pz.dtos.TicketDto;
 
 import edu.fpm.pz.services.interfaces.ITicketService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
+@Controller
+@ResponseBody
 @RequestMapping("/tickets")
 public class TicketController {
 
